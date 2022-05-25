@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1186</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DataBase UI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item row="2" column="2">
+       <widget class="QSpinBox" name="idSelector">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>1999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" rowspan="8">
+       <widget class="QTableView" name="tableView"/>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QPushButton" name="reselectButton">
+        <property name="text">
+         <string>Обновить базу</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2">
+       <widget class="QPushButton" name="findButton">
+        <property name="text">
+         <string>Найти</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" colspan="2">
+       <widget class="QPushButton" name="openDatabase">
+        <property name="text">
+         <string>Подключиться</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QPushButton" name="addElement">
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Добавить элементы</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="deleteButton">
+        <property name="text">
+         <string>Удалить по id</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1" colspan="2">
+       <widget class="QPushButton" name="closeDatabase">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Отключиться</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="2">
+       <widget class="QPushButton" name="writeToFileBtn">
+        <property name="text">
+         <string>Записать таблицу в файл</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Добавить элемент</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

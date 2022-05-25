@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialogfind</class>
+ <widget class="QDialog" name="dialogfind">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>861</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Find person</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Рост(не меньше)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QComboBox" name="genderField">
+         <item>
+          <property name="text">
+           <string>Мужской</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Женский</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="5" rowspan="2">
+        <widget class="QCheckBox" name="marriedField">
+         <property name="text">
+          <string>Был женат/ была замужем</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="heightField">
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Пол</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QSpinBox" name="childrenAmountField">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QSpinBox" name="ageField">
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Не меньше</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Возраст(не больше)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <widget class="QCheckBox" name="childrenField">
+         <property name="text">
+          <string>Интересует наличие детей</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <widget class="QTableView" name="tableView"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
